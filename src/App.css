@@ -30,6 +30,13 @@
   gap: 20px;
 }
 
+.results-count {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
 .article {
   padding: 20px;
   border: 1px solid #eee;

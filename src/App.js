@@ -61,6 +61,11 @@ function App() {
       </div>
       
       <div className="results-container">
+        {searchTerm && (
+          <div className="results-count">
+            {filteredArticles.length} result{filteredArticles.length !== 1 ? 's' : ''} found
+          </div>
+        )}
         {filteredArticles.map(article => (
           <div key={article.id} className="article">
             <h3>{highlightText(article.title, searchTerm)}</h3>
